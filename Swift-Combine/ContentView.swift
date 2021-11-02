@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isNavgateCombineTimer = false
+    @State var isNavgateCombineSubscriber = false
+    @State var isNavgateTest = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                NavigationLink(isActive: $isNavgateCombineTimer) {
+                    CombineTimerView()
+                } label: {
+                    Button(action: {
+                        self.isNavgateCombineTimer.toggle()
+                    }) {
+                        Text("CombineTimerView")
+                    }
+                }
+                
+                NavigationLink(isActive: $isNavgateCombineSubscriber) {
+                    CombineSubscriberView()
+                } label: {
+                    Button(action: {
+                        self.isNavgateCombineSubscriber.toggle()
+                    }) {
+                        Text("CombineSubscriberView")
+                    }
+                }
+            }
+        }
     }
 }
 
