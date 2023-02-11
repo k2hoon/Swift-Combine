@@ -13,21 +13,15 @@ struct CombineSubscriberView: View {
     var body: some View {
         VStack {
             Text("Hello, World!")
-            Button(action: {
-                self.viewModel.sinkSubscriber()
-            }) {
+            Button(action: { self.viewModel.sinkSubscriber()}) {
                 Text("sinkSubscriber")
             }
             
-            Button(action: {
-                self.viewModel.assignSubscriber()
-            }) {
+            Button(action: { self.viewModel.assignSubscriber() }) {
                 Text("assignSubscriber")
             }
             
-            Button(action: {
-                self.viewModel.customSubscriber()
-            }) {
+            Button(action: { self.viewModel.customSubscriber() }) {
                 Text("customSubscriber")
             }
         }

@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct CombineTimerView: View {
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var count = 0
     
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     var body: some View {
-        Text("Hello, World!")
-            .onReceive(timer) { time in
-                if self.count == 5 {
-                    self.timer.upstream.connect().cancel()
-                } else {
-                    print("The time is now \(time)")
+        VStack {
+            Text("Hello, World!")
+                .onReceive(timer) { time in
+                    if self.count == 5 {
+                        self.timer.upstream.connect().cancel()
+                    } else {
+                        self.count += 1
+                    }   
                 }
-                self.count += 1
-            }
-        Text("Counter: \(self.count)")
+            Text("Counter: \(self.count)")
+        }
     }
 }
 
