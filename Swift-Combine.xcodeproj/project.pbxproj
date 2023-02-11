@@ -17,6 +17,8 @@
 		684FDF9C2731760700E290DA /* CombineTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF9B2731760700E290DA /* CombineTimerView.swift */; };
 		684FDF9E2731763D00E290DA /* CombineSubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF9D2731763D00E290DA /* CombineSubscriberView.swift */; };
 		684FDFA02731765000E290DA /* CombinSubscriberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF9F2731765000E290DA /* CombinSubscriberViewModel.swift */; };
+		68A84C6229974683008909C7 /* PublishedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A84C6129974683008909C7 /* PublishedTestView.swift */; };
+		68A84C642997B5FD008909C7 /* ObservableObjectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A84C632997B5FD008909C7 /* ObservableObjectTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		684FDF9B2731760700E290DA /* CombineTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTimerView.swift; sourceTree = "<group>"; };
 		684FDF9D2731763D00E290DA /* CombineSubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSubscriberView.swift; sourceTree = "<group>"; };
 		684FDF9F2731765000E290DA /* CombinSubscriberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinSubscriberViewModel.swift; sourceTree = "<group>"; };
+		68A84C6129974683008909C7 /* PublishedTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedTestView.swift; sourceTree = "<group>"; };
+		68A84C632997B5FD008909C7 /* ObservableObjectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 			children = (
 				684FDF9B2731760700E290DA /* CombineTimerView.swift */,
 				684FDF9D2731763D00E290DA /* CombineSubscriberView.swift */,
+				68A84C6129974683008909C7 /* PublishedTestView.swift */,
+				68A84C632997B5FD008909C7 /* ObservableObjectTestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				684FDF742731759200E290DA /* ContentView.swift in Sources */,
+				68A84C642997B5FD008909C7 /* ObservableObjectTestView.swift in Sources */,
+				68A84C6229974683008909C7 /* PublishedTestView.swift in Sources */,
 				684FDF9C2731760700E290DA /* CombineTimerView.swift in Sources */,
 				684FDFA02731765000E290DA /* CombinSubscriberViewModel.swift in Sources */,
 				684FDF9E2731763D00E290DA /* CombineSubscriberView.swift in Sources */,

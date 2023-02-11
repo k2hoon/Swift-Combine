@@ -8,30 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isNavgateCombineTimer = false
-    @State var isNavgateCombineSubscriber = false
-    @State var isNavgateTest = false
+    @State private var isPresented = false
+    
+    var fullCover: AnyView? = nil
     
     var body: some View {
         NavigationView {
-            VStack {
-                NavigationLink(isActive: $isNavgateCombineTimer) {
-                    CombineTimerView()
-                } label: {
-                    Button(action: {
-                        self.isNavgateCombineTimer.toggle()
-                    }) {
-                        Text("CombineTimerView")
-                    }
-                }
-                
-                NavigationLink(isActive: $isNavgateCombineSubscriber) {
-                    CombineSubscriberView()
-                } label: {
-                    Button(action: {
-                        self.isNavgateCombineSubscriber.toggle()
-                    }) {
-                        Text("CombineSubscriberView")
+            List {
+                ForEach(ViewType.allCases, id: \.self) { view in
+                    NavigationLink(view.rawValue) {
+                        view.viewBuilder()
                     }
                 }
             }
@@ -42,5 +28,23 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+extension ContentView {
+    enum ViewType: String, CaseIterable {
+        case published = "Published test"
+        case observable = "ObservableObject test"
+        case timer = "CombineTimerView"
+        case subscriber = "CombineSubscriber"
+        
+        @ViewBuilder func viewBuilder() -> some View {
+            switch self {
+            case .published: PublishedTestView()
+            case .observable: ObservableObjectTestView()
+            case .subscriber: CombineSubscriberView()
+            case .timer: CombineTimerView()
+            }
+        }
     }
 }
