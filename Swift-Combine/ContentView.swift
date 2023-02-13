@@ -37,6 +37,8 @@ extension ContentView {
         case observable = "ObservableObject test"
         case timer = "CombineTimerView"
         case subscriber = "CombineSubscriber"
+        case just = "Just publisher"
+        case future = "Future publisher"
         
         @ViewBuilder func viewBuilder() -> some View {
             switch self {
@@ -44,6 +46,8 @@ extension ContentView {
             case .observable: ObservableObjectTestView()
             case .subscriber: CombineSubscriberView()
             case .timer: CombineTimerView()
+            case .just: JustTestView()
+            case .future: FutureTestView()
             }
         }
     }
