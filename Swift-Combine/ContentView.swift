@@ -39,6 +39,10 @@ extension ContentView {
         case subscriber = "CombineSubscriber"
         case just = "Just publisher"
         case future = "Future publisher"
+        case deferred = "Deferred publisher"
+        case empty = "Empty publisher"
+        case fail = "Fail publisher"
+        case record = "Record publisher"
         
         @ViewBuilder func viewBuilder() -> some View {
             switch self {
@@ -48,6 +52,10 @@ extension ContentView {
             case .timer: CombineTimerView()
             case .just: JustTestView()
             case .future: FutureTestView()
+            case .deferred: DeferredTestView()
+            case .empty: EmptyTestView()
+            case .fail: FailTestView()
+            case .record: RecordTestView()
             }
         }
     }
