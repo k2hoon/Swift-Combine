@@ -15,8 +15,8 @@
 		684FDF8D2731759400E290DA /* Swift_CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF8C2731759400E290DA /* Swift_CombineUITests.swift */; };
 		684FDF8F2731759400E290DA /* Swift_CombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF8E2731759400E290DA /* Swift_CombineUITestsLaunchTests.swift */; };
 		684FDF9C2731760700E290DA /* CombineTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF9B2731760700E290DA /* CombineTimerView.swift */; };
-		684FDF9E2731763D00E290DA /* CombineSubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF9D2731763D00E290DA /* CombineSubscriberView.swift */; };
-		684FDFA02731765000E290DA /* CombinSubscriberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF9F2731765000E290DA /* CombinSubscriberViewModel.swift */; };
+		684FDF9E2731763D00E290DA /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF9D2731763D00E290DA /* SubscriberView.swift */; };
+		684FDFA02731765000E290DA /* SubscriberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF9F2731765000E290DA /* SubscriberViewModel.swift */; };
 		685CE902299AAB2700521CA3 /* FutureTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685CE901299AAB2700521CA3 /* FutureTestView.swift */; };
 		685CE904299AAB5800521CA3 /* JustTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685CE903299AAB5800521CA3 /* JustTestView.swift */; };
 		6869EFCD299BD7A8007F911F /* DeferredTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869EFCC299BD7A8007F911F /* DeferredTestView.swift */; };
@@ -56,8 +56,8 @@
 		684FDF8C2731759400E290DA /* Swift_CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_CombineUITests.swift; sourceTree = "<group>"; };
 		684FDF8E2731759400E290DA /* Swift_CombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_CombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		684FDF9B2731760700E290DA /* CombineTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTimerView.swift; sourceTree = "<group>"; };
-		684FDF9D2731763D00E290DA /* CombineSubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSubscriberView.swift; sourceTree = "<group>"; };
-		684FDF9F2731765000E290DA /* CombinSubscriberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinSubscriberViewModel.swift; sourceTree = "<group>"; };
+		684FDF9D2731763D00E290DA /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
+		684FDF9F2731765000E290DA /* SubscriberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberViewModel.swift; sourceTree = "<group>"; };
 		685CE901299AAB2700521CA3 /* FutureTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureTestView.swift; sourceTree = "<group>"; };
 		685CE903299AAB5800521CA3 /* JustTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustTestView.swift; sourceTree = "<group>"; };
 		6869EFCC299BD7A8007F911F /* DeferredTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredTestView.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				684FDF9B2731760700E290DA /* CombineTimerView.swift */,
-				684FDF9D2731763D00E290DA /* CombineSubscriberView.swift */,
+				68A0FCF4299F6C300014A1C6 /* Subscriber */,
 				68A84C6129974683008909C7 /* PublishedTestView.swift */,
 				68A84C632997B5FD008909C7 /* ObservableObjectTestView.swift */,
 				685CE901299AAB2700521CA3 /* FutureTestView.swift */,
@@ -171,9 +171,17 @@
 		684FDFA22731774800E290DA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				684FDF9F2731765000E290DA /* CombinSubscriberViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		68A0FCF4299F6C300014A1C6 /* Subscriber */ = {
+			isa = PBXGroup;
+			children = (
+				684FDF9D2731763D00E290DA /* SubscriberView.swift */,
+				684FDF9F2731765000E290DA /* SubscriberViewModel.swift */,
+			);
+			path = Subscriber;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,11 +321,11 @@
 				6869EFCD299BD7A8007F911F /* DeferredTestView.swift in Sources */,
 				684FDF9C2731760700E290DA /* CombineTimerView.swift in Sources */,
 				6869EFD3299BFD1E007F911F /* RecordTestView.swift in Sources */,
-				684FDFA02731765000E290DA /* CombinSubscriberViewModel.swift in Sources */,
+				684FDFA02731765000E290DA /* SubscriberViewModel.swift in Sources */,
 				685CE902299AAB2700521CA3 /* FutureTestView.swift in Sources */,
 				6869EFD1299BF98E007F911F /* FailTestView.swift in Sources */,
 				685CE904299AAB5800521CA3 /* JustTestView.swift in Sources */,
-				684FDF9E2731763D00E290DA /* CombineSubscriberView.swift in Sources */,
+				684FDF9E2731763D00E290DA /* SubscriberView.swift in Sources */,
 				684FDF722731759200E290DA /* Swift_CombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

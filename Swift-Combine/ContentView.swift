@@ -36,7 +36,7 @@ extension ContentView {
         case published = "Published test"
         case observable = "ObservableObject test"
         case timer = "CombineTimerView"
-        case subscriber = "CombineSubscriber"
+        case subscriber = "Subscriber"
         case just = "Just publisher"
         case future = "Future publisher"
         case deferred = "Deferred publisher"
@@ -48,7 +48,7 @@ extension ContentView {
             switch self {
             case .published: PublishedTestView()
             case .observable: ObservableObjectTestView()
-            case .subscriber: CombineSubscriberView()
+            case .subscriber: SubscriberView()
             case .timer: CombineTimerView()
             case .just: JustTestView()
             case .future: FutureTestView()
