@@ -43,6 +43,11 @@ extension ContentView {
         case empty = "Empty publisher"
         case fail = "Fail publisher"
         case record = "Record publisher"
+        case delay = "Delay publisher"
+        case timeout = "Timeout publisher"
+        case debounce = "Deboune publisher"
+        case throttle = "Throttle publisher"
+        case measureInterval = "MeasureInterval publisher"
         
         @ViewBuilder func viewBuilder() -> some View {
             switch self {
@@ -56,6 +61,11 @@ extension ContentView {
             case .empty: EmptyTestView()
             case .fail: FailTestView()
             case .record: RecordTestView()
+            case .delay: DelayView()
+            case .timeout: TimeoutView()
+            case .debounce: DebounceView()
+            case .throttle: ThrottleView()
+            case .measureInterval: MeasureIntervalView()
             }
         }
     }

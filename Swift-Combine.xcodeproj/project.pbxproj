@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68410ED029AE5BCB0097EBA0 /* ThrottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410ECF29AE5BCB0097EBA0 /* ThrottleView.swift */; };
+		68410ED229AE62DC0097EBA0 /* DelayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410ED129AE62DC0097EBA0 /* DelayView.swift */; };
+		68410ED429AE66C00097EBA0 /* TimeoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410ED329AE66C00097EBA0 /* TimeoutView.swift */; };
+		68410ED629AE6F2C0097EBA0 /* MeasureIntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410ED529AE6F2C0097EBA0 /* MeasureIntervalView.swift */; };
 		684FDF722731759200E290DA /* Swift_CombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF712731759200E290DA /* Swift_CombineApp.swift */; };
 		684FDF742731759200E290DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDF732731759200E290DA /* ContentView.swift */; };
 		684FDF762731759400E290DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684FDF752731759400E290DA /* Assets.xcassets */; };
@@ -25,6 +29,8 @@
 		6869EFD3299BFD1E007F911F /* RecordTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869EFD2299BFD1E007F911F /* RecordTestView.swift */; };
 		68A84C6229974683008909C7 /* PublishedTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A84C6129974683008909C7 /* PublishedTestView.swift */; };
 		68A84C642997B5FD008909C7 /* ObservableObjectTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A84C632997B5FD008909C7 /* ObservableObjectTestView.swift */; };
+		68F2370229A91E560087DBE5 /* DebounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2370129A91E560087DBE5 /* DebounceView.swift */; };
+		68F2370429A91E610087DBE5 /* ControlTimingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2370329A91E610087DBE5 /* ControlTimingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68410ECF29AE5BCB0097EBA0 /* ThrottleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottleView.swift; sourceTree = "<group>"; };
+		68410ED129AE62DC0097EBA0 /* DelayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayView.swift; sourceTree = "<group>"; };
+		68410ED329AE66C00097EBA0 /* TimeoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeoutView.swift; sourceTree = "<group>"; };
+		68410ED529AE6F2C0097EBA0 /* MeasureIntervalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureIntervalView.swift; sourceTree = "<group>"; };
 		684FDF6E2731759200E290DA /* Swift-Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		684FDF712731759200E290DA /* Swift_CombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_CombineApp.swift; sourceTree = "<group>"; };
 		684FDF732731759200E290DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 		6869EFD2299BFD1E007F911F /* RecordTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTestView.swift; sourceTree = "<group>"; };
 		68A84C6129974683008909C7 /* PublishedTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedTestView.swift; sourceTree = "<group>"; };
 		68A84C632997B5FD008909C7 /* ObservableObjectTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectTestView.swift; sourceTree = "<group>"; };
+		68F2370129A91E560087DBE5 /* DebounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceView.swift; sourceTree = "<group>"; };
+		68F2370329A91E610087DBE5 /* ControlTimingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlTimingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +131,6 @@
 				684FDF712731759200E290DA /* Swift_CombineApp.swift */,
 				684FDF732731759200E290DA /* ContentView.swift */,
 				684FDFA12731771C00E290DA /* Views */,
-				684FDFA22731774800E290DA /* ViewModels */,
 				684FDF752731759400E290DA /* Assets.xcassets */,
 				684FDF772731759400E290DA /* Preview Content */,
 			);
@@ -155,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				684FDF9B2731760700E290DA /* CombineTimerView.swift */,
+				68F2370029A91E450087DBE5 /* ControlTiming */,
 				68A0FCF4299F6C300014A1C6 /* Subscriber */,
 				68A84C6129974683008909C7 /* PublishedTestView.swift */,
 				68A84C632997B5FD008909C7 /* ObservableObjectTestView.swift */,
@@ -168,13 +180,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		684FDFA22731774800E290DA /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		68A0FCF4299F6C300014A1C6 /* Subscriber */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +187,19 @@
 				684FDF9F2731765000E290DA /* SubscriberViewModel.swift */,
 			);
 			path = Subscriber;
+			sourceTree = "<group>";
+		};
+		68F2370029A91E450087DBE5 /* ControlTiming */ = {
+			isa = PBXGroup;
+			children = (
+				68F2370329A91E610087DBE5 /* ControlTimingViewModel.swift */,
+				68F2370129A91E560087DBE5 /* DebounceView.swift */,
+				68410ECF29AE5BCB0097EBA0 /* ThrottleView.swift */,
+				68410ED129AE62DC0097EBA0 /* DelayView.swift */,
+				68410ED329AE66C00097EBA0 /* TimeoutView.swift */,
+				68410ED529AE6F2C0097EBA0 /* MeasureIntervalView.swift */,
+			);
+			path = ControlTiming;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,16 +332,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68410ED229AE62DC0097EBA0 /* DelayView.swift in Sources */,
 				6869EFCF299BF0FD007F911F /* EmptyTestView.swift in Sources */,
 				684FDF742731759200E290DA /* ContentView.swift in Sources */,
+				68410ED429AE66C00097EBA0 /* TimeoutView.swift in Sources */,
 				68A84C642997B5FD008909C7 /* ObservableObjectTestView.swift in Sources */,
 				68A84C6229974683008909C7 /* PublishedTestView.swift in Sources */,
+				68410ED629AE6F2C0097EBA0 /* MeasureIntervalView.swift in Sources */,
 				6869EFCD299BD7A8007F911F /* DeferredTestView.swift in Sources */,
 				684FDF9C2731760700E290DA /* CombineTimerView.swift in Sources */,
+				68410ED029AE5BCB0097EBA0 /* ThrottleView.swift in Sources */,
 				6869EFD3299BFD1E007F911F /* RecordTestView.swift in Sources */,
+				68F2370229A91E560087DBE5 /* DebounceView.swift in Sources */,
 				684FDFA02731765000E290DA /* SubscriberViewModel.swift in Sources */,
 				685CE902299AAB2700521CA3 /* FutureTestView.swift in Sources */,
 				6869EFD1299BF98E007F911F /* FailTestView.swift in Sources */,
+				68F2370429A91E610087DBE5 /* ControlTimingViewModel.swift in Sources */,
 				685CE904299AAB5800521CA3 /* JustTestView.swift in Sources */,
 				684FDF9E2731763D00E290DA /* SubscriberView.swift in Sources */,
 				684FDF722731759200E290DA /* Swift_CombineApp.swift in Sources */,
